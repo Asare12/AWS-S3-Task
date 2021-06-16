@@ -1,4 +1,8 @@
 # AWS-S3-Task
+
+## Pre-requisites
+You have a running EC2 instance ready to connect to
+
 ## Configuring and setting up s3 cli
 1. The first order of business is to set up an AWS EC2 instance. This will use both the port 80 as well as a simple ssh port and IP.
 2. You must then ssh in with `ssh -i (pem file) ubuntu@(iPv4 DNS)`. Then update and upgrade your system.
