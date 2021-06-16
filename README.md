@@ -31,5 +31,11 @@
 5. You can finally make a bucket, in order to make one type `aws s3 mb s3://(bucket-name)`.
 6. After this you can enter copy a file over after making one by using `aws s3 cp <file name> s://(bucket-name)`.
 7. To change the file permissions click the file and go to the permissions tab, then select all the read options.
-  
+
+## CRUD commands
+- `rm -rf devops_bootcamp_test.text` to remove a file
+- `aws s3 sync s3://devops-bootcamp-jaspreet-bucket/ devops_bootcamp_text.text` this will bring everything down (download) from your bucket so your local host is up to date
+- `aws s3 rm s3://devops-bootcamp-jaspreet-bucket/devops_bootcamp_test.text` delete the file from the bucket
+- Doing the above command your file won't exist in your bucket, go to aws and refresh buckets, you will see file is not there
+- `aws s3 rb s3://devops-bootcamp-jaspreet-bucket` - rb means remove bucket, doing this your bucket will no longer exist
   
