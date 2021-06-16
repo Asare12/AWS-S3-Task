@@ -34,8 +34,8 @@
 
 ## CRUD commands
 - `rm -rf devops_bootcamp_test.text` to remove a file
-- `aws s3 sync s3://devops-bootcamp-jaspreet-bucket/ devops_bootcamp_text.text` this will bring everything down (download) from your bucket so your local host is up to date
-- `aws s3 rm s3://devops-bootcamp-jaspreet-bucket/devops_bootcamp_test.text` delete the file from the bucket
+- `aws s3 sync s3://devops-bootcamp-david-bucket/ devops_bootcamp_text.text` this will bring everything down (download) from your bucket so your local host is up to date
+- `aws s3 rm s3://devops-bootcamp-david-bucket/devops_bootcamp_test.text` delete the file from the bucket
 - Doing the above command your file won't exist in your bucket, go to aws and refresh buckets, you will see file is not there
-- `aws s3 rb s3://devops-bootcamp-jaspreet-bucket` - rb means remove bucket, doing this your bucket will no longer exist
+- `aws s3 rb s3://devops-bootcamp-david-bucket` - rb means remove bucket, doing this your bucket will no longer exist
   
