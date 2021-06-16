@@ -34,10 +34,10 @@
 
 ## CRUD commands
 - `rm -rf devops_bootcamp_test.text` to remove a file
-- `aws s3 sync s3://devops-bootcamp-david-bucket/ devops_bootcamp_text.text` this will bring everything down (download) from your bucket so your local host is up to date
-- `aws s3 rm s3://devops-bootcamp-david-bucket/devops_bootcamp_test.text` delete the file from the bucket
+- `aws s3 sync s3://[bucket name]/ [file name]` this will bring everything down (download) from your bucket so your local host is up to date
+- `aws s3 rm s3://[bucket name]/[file name]` delete the file from the bucket
 - Doing the above command your file won't exist in your bucket, go to aws and refresh buckets, you will see file is not there
-- `aws s3 rb s3://devops-bootcamp-david-bucket` - rb means remove bucket, doing this your bucket will no longer exist
+- `aws s3 rb s3://[bucket name]/[file name]` - rb means remove bucket, doing this your bucket will no longer exist
   
 ## s3 Glaciers
 A service that accounts for non-frequently used data, which helps to save on cost as files or buckets that don't need to be accessed frequently can be kept in the s3 glacier. So they exist but just put to one side. If someone does need to access it notification has to be given.
